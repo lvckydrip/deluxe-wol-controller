@@ -15,7 +15,7 @@ fi
 
 echo "Started installing npm and pnpm..."
 sudo apt install npm -y
-sudo npm install pnpm
+sudo npm install -g pnpm
 echo "Successfully installed npm and pnpm."
 
 echo "Run pnpm install..."
