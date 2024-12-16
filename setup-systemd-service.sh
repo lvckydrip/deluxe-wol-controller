@@ -23,6 +23,10 @@ cd "$script_dir" || exit
 sudo pnpm install
 echo "Successfully finished pnpm install."
 
+echo "Run npm run build..."
+sudo npm run build
+echo "Successfully finished pnpm run build."
+
 echo "Creating systemd service..."
 cat <<EOL | sudo tee "/etc/systemd/system/deluxe-wol-controller.service"
 [Unit]
