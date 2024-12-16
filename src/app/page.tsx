@@ -13,8 +13,5 @@ export default async function Home() {
           </Link>
         </div>
         {data?.map((item) => <ComputerItem key={item.id} item={item} />)}
-        {data?.map((item) => <ComputerItem key={item.id} item={item} />)}
-        {data?.map((item) => <ComputerItem key={item.id} item={item} />)}
-        {data?.map((item) => <ComputerItem key={item.id} item={item} />)}
       </main>)
 }
