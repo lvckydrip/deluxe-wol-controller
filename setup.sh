@@ -55,6 +55,7 @@ After=multi-user.target
 ExecStart=/usr/bin/sudo /usr/bin/node $deluxe_wol_controller_dir/server.js
 Type=simple
 Restart=always
+Environment="PORT=80"
 WorkingDirectory=$deluxe_wol_controller_dir
 
 [Install]
