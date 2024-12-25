@@ -52,7 +52,7 @@ Description=Deluxe WakeOnLan Controller Service
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/sudo /usr/bin/npm run start
+ExecStart=/usr/bin/sudo /usr/bin/node $deluxe_wol_controller_dir/server.js
 Type=simple
 Restart=always
 WorkingDirectory=$deluxe_wol_controller_dir
