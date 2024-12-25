@@ -20,7 +20,7 @@ echo "Successfully installed npm and pnpm."
 
 echo "Run pnpm install..."
 cd "$script_dir" || exit
-sudo pnpm install
+sudo pnpm install --production
 echo "Successfully finished pnpm install."
 
 echo "Run npm run build..."

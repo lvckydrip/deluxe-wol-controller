@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && robocopy ./public ./.next/standalone/public /E /NJH /NDL && robocopy ./.next/static ./.next/standalone/.next/static /E /NJH /NDL",
     "start": "next start -p 80",
     "lint": "next lint"
   },
   "dependencies": {
     "@prisma/client": "^6.0.1",
-    "next": "15.1.0",
+    "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^4.2.0"
