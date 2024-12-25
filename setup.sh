@@ -38,11 +38,11 @@ fi
 
 echo "Started downloading deluxe-wol-controller..."
 curl -L -o deluxe-wol-controller-server.zip https://github.com/lvckydrip/deluxe-wol-controller/releases/latest/download/server.zip
-unzip -o deluxe-wol-controller-server.zip -d /deluxe-wol-controller
+sudo unzip -o deluxe-wol-controller-server.zip -d /deluxe-wol-controller
 echo "Successfully downloaded deluxe-wol-controller."
 
 echo "Started cloning deluxe-wol-router..."
-git clone https://github.com/lvckydrip/deluxe-wol-router.git
+sudo git clone https://github.com/lvckydrip/deluxe-wol-router.git
 echo "Successfully cloned deluxe-wol-router."
 
 echo "Creating systemd service for controller..."
