@@ -41,6 +41,13 @@ curl -L -o deluxe-wol-controller-server.zip https://github.com/lvckydrip/deluxe-
 sudo unzip -o deluxe-wol-controller-server.zip -d ./deluxe-wol-controller
 echo "Successfully downloaded deluxe-wol-controller."
 
+echo "Initializing deluxe-wol-controller..."
+cd ./deluxe-wol-controller
+npm install prisma -y
+npx prisma init
+cd ..
+echo "Successfully initialized deluxe-wol-controller."
+
 echo "Started cloning deluxe-wol-router..."
 sudo git clone https://github.com/lvckydrip/deluxe-wol-router.git
 echo "Successfully cloned deluxe-wol-router."
